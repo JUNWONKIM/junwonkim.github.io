@@ -6,32 +6,42 @@
   <title>RL Evasion Project – Junwon Kim</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f0f2f5;
+      background: #f8f9fa;
       color: #333;
     }
 
     .container {
       max-width: 960px;
-      margin: auto;
-      padding: 40px 20px;
-      background: #fff;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
-    }
-
-    h1, h2 {
-      color: #222;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #444;
+      margin-top: 50px;
       border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    p, li {
+      font-size: 1.15em;
+      line-height: 1.8em;
     }
 
     .section {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
 
     video {
@@ -41,9 +51,13 @@
       margin-top: 15px;
     }
 
+    .button-group {
+      margin-top: 20px;
+    }
+
     a.button {
       display: inline-block;
-      margin-top: 10px;
+      margin: 0 10px;
       padding: 10px 20px;
       background-color: #007bff;
       color: white;
@@ -57,18 +71,17 @@
     }
 
     footer {
-      margin-top: 60px;
-      text-align: center;
+      margin-top: 80px;
       font-size: 0.9em;
-      color: #777;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Learning Evasion Strategies via Reinforcement Learning</h1>
-    <p><strong>Author:</strong> Junwon Kim<br/>
-    <strong>Date:</strong> June 2025</p>
+    <p></strong> Junwon Kim<br/>
+  
 
     <div class="section">
       <h2>Abstract</h2>
@@ -84,21 +97,26 @@
     </div>
 
     <div class="section">
-      <h2>Full Paper</h2>
-      <p>You can download or view the full report here:</p>
-      <a class="button" href="RL_paper.pdf" target="_blank">📄 View PDF Report</a>
+      <h2>Resources</h2>
+      <div class="button-group">
+        <a class="button" href="RL_paper.pdf" target="_blank">📄 View PDF</a>
+        <a class="button" href="https://github.com/JUNWONKIM/RL-project" target="_blank">💻 View GitHub</a>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>Technical Summary</h2>
-      <ul>
-        <li>Environment: Unity 2022.3.21f1 + ML-Agents 0.30.0</li>
-        <li>Core Mechanic: Evasion-based survival</li>
-        <li>Reward Design: Survival time + HP loss penalty + threat density penalty</li>
-        <li>Curriculum: Skull speed, spawn count, bullet speed scaled over time</li>
-        <li>Key Result: Simplified reward config (no distance penalty) yielded best results</li>
+   <div class="section">
+    <h2 style="margin-bottom: 20px;">Technical Summary</h2>
+    <div style="display: flex; justify-content: center;">
+      <ul style="text-align: left; font-size: 1.15em; line-height: 1.8em;">
+        <li><strong>Environment:</strong> Unity 2022.3.21f1 + ML-Agents 0.30.0</li>
+        <li><strong>Core Mechanic:</strong> Evasion-based survival</li>
+        <li><strong>Reward Design:</strong> Survival time + HP loss penalty + threat density penalty</li>
+        <li><strong>Curriculum:</strong> Skull speed, spawn count, bullet speed scaled over time</li>
+        <li><strong>Key Result:</strong> Simplified reward config (no distance penalty) yielded best results</li>
       </ul>
     </div>
+  </div>
+
 
     <footer>
       <p>© 2025 Junwon Kim. All rights reserved.</p>
